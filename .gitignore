@@ -1,0 +1,35 @@
+# Build output
+build/
+*.3dsx
+*.smdh
+*.elf
+*.lst
+*.map
+*.o
+*.d
+*.a
+*.exe
+
+# Host tooling and research checkouts (fetch with the commands in README.md)
+third_party/
+
+# Editor / OS noise
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# Local result exports (curated hardware runs listed in results/README.md are tracked)
+results/*
+!results/README.md
+!results/new3ds-804mhz-2026-11-16.json
+!results/new3ds-804mhz-2026-11-16.csv
+!results/new3ds-804mhz-2026-11-16-v02.json
+!results/new3ds-804mhz-2026-11-16-v02.csv
+!results/new3ds-804mhz-2026-11-16-v02-samples.csv
+!results/new3ds-804mhz-2026-11-16-v8.json
+!results/new3ds-804mhz-2026-11-16-v8.csv
+!results/new3ds-804mhz-2026-11-16-v8-samples.csv
+!results/new3ds-804mhz-2026-11-17-v15.json
+!results/new3ds-804mhz-2026-11-17-v15.csv
+!results/new3ds-804mhz-2026-11-17-v15-samples.csv

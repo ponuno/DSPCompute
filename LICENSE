@@ -1,0 +1,47 @@
+MIT License
+
+Copyright (c) 2026 DSPMark contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+Third-party notices
+--------------------------------------------------------------------------------
+
+This repository vendors third-party projects under third_party/ for research and
+host-side tooling. They are not part of the DSPMark.3dsx binary.
+
+* Teakra (https://github.com/wwylele/teakra) — MIT License.
+  Used as the instruction encoder (tools/teaasm), the emulator behind
+  tools/dspsim, the disassembler behind tools/teacan, and as documentation for
+  the XpertTeak peripherals.
+
+* OpenDSP (https://github.com/Cellenseres/OpenDSP) — BSD 2-Clause License.
+  Used as a reference for hardware-tested APBP, MIU and DMA register sequences
+  and for the DSP firmware boot/unload protocol. No OpenDSP source is copied
+  into the shipped component; the constants and protocol are re-implemented and
+  credited in HARDWARE_NOTES.md.
+
+DSPMark links against libctru (zlib) and, in future GPU work, citro3d (zlib).
+No Nintendo firmware or proprietary code is included. The DSP component is an
+original work assembled from dsp/*.asm.
+
+Luma3DS was consulted to confirm which CFW properties are required (DSP
+signature check patch and DSP RAM mapping for homebrew). No Luma3DS code is
+included; Luma3DS is GPLv3.
